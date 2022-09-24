@@ -1,0 +1,6 @@
+<div class="task-and-button">
+    <div class="task" [ngClass]="{completed : task.completed}" (dblclick)="onToggle(task)">
+        <h5>TASK TITLE = {{task.title}}</h5>
+    </div>
+    <!-- <fa-icon class="fa" [ngStyle]="{color: 'red'}" [icon]="faTimes"></fa-icon> -->
+</div>

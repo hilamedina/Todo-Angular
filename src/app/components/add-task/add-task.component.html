@@ -1,0 +1,11 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text"></label>
+        <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="ADD TASK" />
+    </div>
+    <div class="form-control form-control-check">
+        <label for="completed">Completed ?</label>
+        <input type="checkbox" name="completed" [(ngModel)]="completed" id="completed" placeholder="ADD TASK" />
+    </div>
+    <input type="submit" value="Save Task" class="btn btn=block" />
+</form>
