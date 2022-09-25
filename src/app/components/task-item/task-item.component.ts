@@ -13,6 +13,7 @@ export class TaskItemComponent implements OnInit {
   @Output() onToggleCompleted: EventEmitter<Task> = new EventEmitter
 
   faTimes= faTimes
+  shouldDisplayTask : boolean = true
 
   constructor() {}
 
@@ -21,7 +22,9 @@ export class TaskItemComponent implements OnInit {
   onToggle(task: Task){
     this.onToggleCompleted.emit(task);
   }
-
+  toggleDisplay(){
+    this.shouldDisplayTask = !this.shouldDisplayTask
+  }
   }
 
 

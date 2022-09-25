@@ -24,7 +24,8 @@ toggleCompleted(task: Task){
 newTask(task:Task){
   this.taskService.newTask(task).subscribe((task) => (this.tasks.push(task)));
 }
-// newTask(task:Task){
-//   this.taskService.newTask(task).subscribe((task) => (console.log(task)));
-// }
+remeining(task:Task){
+  // this.taskService.remeining(task).subscribe((task) => (!task.completed));
+  return  this.tasks.filter((t) => t.completed)
+}
 }

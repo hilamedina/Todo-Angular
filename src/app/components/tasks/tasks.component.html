@@ -1,3 +1,10 @@
 <app-add-task (OnNewTask)="newTask($event)"></app-add-task>
 <app-task-item *ngFor="let task of tasks" [task]="task" (onToggleCompleted)="toggleCompleted(task)">
 </app-task-item>
+
+<!-- <div>{{remeining()}}</div> -->
+<div class="button-div">
+    <button class="btn">All</button>
+    <button class="btn">Un Completed</button>
+    <button class="btn">Completed</button>
+</div>
