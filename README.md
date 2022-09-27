@@ -1,27 +1,20 @@
-# TodoHomeTask
+hello:
+"okoora" company home task -
+Building a tasks management application - Angular framework Javascript and CSS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+The app includes:
 
-## Development server
+#The login page:
+Entry to the task display window will only be possible after entering a username and password that match the names of the users on the mocked Data.
+In case of entering characters that do not match the information, an error message will be displayed to the user
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#Add a new task window:
+A window that allows the user to add a new task to his task list and mark it as done or not.
 
-## Code scaffolding
+#Task display screen:
+option to mark a task as done by double click.
+Option to display the tasks by pages and, the option to hide or show a single task.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+the app is running on "http://localhost:4200"
+start: "ng serve"
