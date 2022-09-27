@@ -37,7 +37,7 @@ remeining(task:Task){
   // this.taskService.remeining(task).subscribe((task) => (!task.completed));
   return  this.tasks.filter((task) => task.completed)
 }
-moveToAddTask(){
-  this.router.navigate(['addtask'])
-}
+// moveToAddTask(){
+//   this.router.navigate(['addtask'])
+// }
 }
