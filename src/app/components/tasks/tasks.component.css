@@ -1,6 +1,6 @@
 .button-div{
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
     margin-top:20px;
 }
@@ -13,5 +13,7 @@
     display: flex;
     justify-content:center;
     align-items: center;
-
+}
+.btn2{
+    margin-bottom:15px;
 }

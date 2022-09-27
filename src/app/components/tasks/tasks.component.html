@@ -1,14 +1,9 @@
-<div class="btn-div">
-    <button class="btn">
-        <a class="a" routerLink="/login">LOGIN PAGE</a>
-    </button>
-    <button class="btn">
-        <a (click)=moveToAddTask() class="a" routerLink="/addtask">ADD Todo</a>
-    </button>
-</div>
+<button class="btn btn2">
+    <a class="a" routerLink="/login">Login Page ➡️</a>
+</button>
 <app-add-task (OnNewTask)="addTask($event)">
 </app-add-task>
-<app-task-item *ngFor="let task of tasks | paginate: { itemsPerPage: 5, currentPage: page }" [task]="task"
+<app-task-item *ngFor="let task of tasks | paginate: { itemsPerPage: 10, currentPage: page }" [task]="task"
     (onToggleCompleted)="toggleCompleted(task)">
 </app-task-item>
 <br>

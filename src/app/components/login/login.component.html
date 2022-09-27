@@ -1,16 +1,12 @@
-<h1>login</h1>
+<h1 class="h1">Login Page</h1>
 <form class="add-form">
-    <div class="form-control">
-        <label for=""></label>
-        <input type="text" name="email" [(ngModel)]="email" id="text" placeholder="Add Email" />
-    </div>
     <div class="form-control">
         <label for=""></label>
         <input type="text" name="username" [(ngModel)]="username" id="text" placeholder="Add Username" />
     </div>
+    <div class="form-control">
+        <label for=""></label>
+        <input type="text" name="email" [(ngModel)]="email" id="text" placeholder="Add Email" />
+    </div>
 </form>
 <input (click)="getUsers()" type="button" value="LOG IN" class="btn btn=block" />
-
-<!-- <button class="btn btn2">
-    <a class="a" routerLink="/">TODO PAGE</a>
-</button> -->
