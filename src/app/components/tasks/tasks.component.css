@@ -5,6 +5,13 @@
     margin-top:20px;
 }
 .a{
+    margin-top:5px;
     text-decoration: none;
     color: white;
+}
+.btn-div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
 }

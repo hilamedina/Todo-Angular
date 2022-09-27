@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from 'src/app/services/task.service'; 
-
 import {Task} from "../../../app/Task"
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -12,7 +13,7 @@ import {Task} from "../../../app/Task"
 export class TasksComponent implements OnInit {
 tasks: Task[] = [];
 
-constructor(private taskService: TaskService) {}
+constructor(private taskService: TaskService,private router: Router) {}
 totalLength: any;
 page: number = 1;
 
@@ -34,6 +35,9 @@ addTask(task:Task){
 }
 remeining(task:Task){
   // this.taskService.remeining(task).subscribe((task) => (!task.completed));
-  return  this.tasks.filter((t) => t.completed)
+  return  this.tasks.filter((task) => task.completed)
+}
+moveToAddTask(){
+  this.router.navigate(['addtask'])
 }
 }

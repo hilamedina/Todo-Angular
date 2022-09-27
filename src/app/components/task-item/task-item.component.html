@@ -1,9 +1,11 @@
-<button [ngStyle]="{color: shouldDisplayTask? 'red' :'green' }" (click)="toggleDisplay()" class="btn">
-    <span>{{ shouldDisplayTask ? 'undispaly' : 'display task' }}</span>
-</button>
-<div class="task-and-button">
-    <div *ngIf="shouldDisplayTask" class="task" [ngClass]="{completed : task.completed}" (dblclick)="onToggle(task)">
-        <h5>Task number {{task.id}} : {{ task.title}}</h5>
+<div class="div">
+    <button [ngStyle]="{color: shouldDisplayTask? 'red' :'green' }" (click)="toggleDisplay()" class="btn">
+        <span>{{ shouldDisplayTask ? 'Hide' : 'Show' }}</span>
+    </button>
+    <div class="task-and-button" *ngIf="shouldDisplayTask">
+        <div class="task" [ngClass]="{completed : task.completed}" (dblclick)="onToggle(task)">
+            <h5>Task number {{task.id}} : {{ task.title}}</h5>
+        </div>
+        <!-- <fa-icon class="fa" [ngStyle]="{color: 'red'}" [icon]="faTimes"></fa-icon> -->
     </div>
-    <!-- <fa-icon class="fa" [ngStyle]="{color: 'red'}" [icon]="faTimes"></fa-icon> -->
 </div>
