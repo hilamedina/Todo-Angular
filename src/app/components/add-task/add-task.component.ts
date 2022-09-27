@@ -9,25 +9,24 @@ import { Task } from '../../Task'
 export class AddTaskComponent implements OnInit {
   @Output() OnNewTask :EventEmitter<Task> = new EventEmitter
 
-  text! :String;
+  title :String | undefined;
   completed :boolean = false
 
   constructor() {}
   ngOnInit(): void {}
 
   onSubmit(){
-    if(!this.text){
+    if(!this.title){
       alert("please add a task")
       return;
     }
     
     const newTask = {
-      text: this.text,
+      title: this.title,
       completed: this.completed
     }
   this.OnNewTask.emit(newTask)
-
-    this.text = "";
+    this.title = "";
     this.completed = false;
   }
 }
