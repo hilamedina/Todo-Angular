@@ -1,5 +1,6 @@
 <div class="div">
-    <button [ngStyle]="{color: shouldDisplayTask? 'red' :'green' }" (click)="toggleDisplay()" class="btn">
+    <button [ngStyle]="{color: shouldDisplayTask? 'red' :'green' }" (click)="toggleDisplay()"
+        class="btn button-display">
         <span>{{ shouldDisplayTask ? 'Hide' : 'Show' }}</span>
     </button>
     <div class="task-and-button" *ngIf="shouldDisplayTask">
